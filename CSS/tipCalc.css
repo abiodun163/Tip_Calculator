@@ -1,0 +1,138 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 13px;
+    background-color: #282c34;
+    color: #fff;
+    padding-top:  6rem;
+    padding-bottom:  6rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 350px;
+    min-height: 200vh;
+}
+
+.billTipTotal, .billTotal
+{
+    margin-bottom: 14px;
+}
+
+.peoplePerPerson
+{
+    display: flex;
+    width: 100%;
+}
+
+#perPerson
+{
+    margin-bottom: 10px;
+    
+}
+
+.people
+{
+    width: 50%;
+    text-align: justify;
+    text-overflow: clip;
+}
+
+.totalPerPerson
+{
+    text-align: center;
+}
+
+.increase, .decrease
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    font-weight: 900;
+}
+
+#prompter
+{
+    background-color: #61dafb;
+    color: #fff;
+    width: 300px;
+    height: 36px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 800;
+    padding-left: 1.7rem;
+    position: relative;
+}
+
+#prompted
+{
+    background-color: #61dafb;
+    color: #fff;
+    width: 300px;
+    height: 36px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 800;
+    padding-left: 1.7rem;
+    position: relative;
+}
+
+#prompted:active
+{
+    background-color: #61dafb;
+    color: #fff;
+}
+
+.sign
+{
+    position: absolute;
+    z-index: 1;
+}
+
+#prompted::placeholder
+{
+    color: #282c34;
+    border: none;
+    font-weight: 500;
+}
+
+#prompter::placeholder
+{
+    color: #282c34;
+    border: none;
+    font-weight: 500;
+}
+
+.bill, .tip
+{
+    margin-bottom: 20px;
+}
+
+#perPerson
+{
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+.buttons
+{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}

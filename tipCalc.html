@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/tipCalc.css">
+    <title>TIP CALCULATOR</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <form>
+            <div class="bill" id="bill">
+                <div class="billTotal" id="billTotal">Bill total</div>
+                <div class="userInput">
+                    <snap class="dollarSign sign" id="dollarSign">$</snap>
+                    <input class="prompter" onkeyup="convertBill ()" id="prompter" type="text" placeholder="0.00" />
+                </div>
+            </div>
+            <div class="tip" id="tip">
+                <div class="billTipTotal" id="billTipTotal">Tip</div>
+                <div class="userInput">
+                    <p class="percentage sign" id="percentage">%</p>
+                    <input class="prompter"  onkeyup="convertBill ()" id="prompted" type="text" placeholder="10" />
+                </div>
+            </div>
+            <div class="peoplePerPerson">
+                <div class="people">
+                    <div id="perPerson">People</div>
+                    <div class="buttons">
+                        <button class="increase" onclick="increasePeople ()">+</button>
+                        <div id="counter">1</div>
+                        <button class="decrease" onclick="decreasePeople ()">-</button>
+                    </div>
+                </div>
+
+                <div class="totalPerPerson">
+                    <div id="perPerson"> Total per Person</div>
+
+                    <h2 id="perPersonTotal">$0.00</h2>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="tipCalc.js"></script>
+</body>
+</html>
